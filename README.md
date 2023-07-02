@@ -1,0 +1,2 @@
+# JunkCoin
+A Junk Coin

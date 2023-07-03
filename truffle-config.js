@@ -10,19 +10,12 @@ module.exports = {
       port: 8545,
       network_id: "*",
     },
-    mumbai: {
+    sepolia: {
       provider: () =>
         new HDWalletProvider(process.env.MNEMONIC, process.env.RPC_URL),
-      network_id: 80001,
-      confirmations: 2,
-      timeoutBlocks: 200,
-      skipDryRun: true,
+      network_id: 11155111,
+      networkCheckTimeout: 60000,
     },
-  },
-  dashboard: {
-    // host: "172.27.70.203",
-    // port: 8545,
-    autoOpen: false
   },
   compilers: {
     solc: {
